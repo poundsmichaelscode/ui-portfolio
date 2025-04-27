@@ -41,4 +41,4 @@ We focused heavily on:
 ## How to Run Locally
 1. Clone the repository:
 
-   git clone https://github.com/your-group-username/portfolio-challenge.git
+https://github.com/poundsmichaelscode/ui-portfolio/blob/main/
