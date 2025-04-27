@@ -3,136 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John Watson - Portfolio</title>
+  <title>UI Portfolio</title>
   <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-
-  <!-- Header / Hero Section -->
-  <header class="hero">
-    <nav class="navbar">
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container header-content">
       <div class="logo">UI Portfolio</div>
-
-        
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      
-    </nav>
-    
-    <div class="hero-content">
-      <h1>Hi, I'm John Watson</h1>
-      <h2>Web Designer & Developer</h2>
-      <div class="hero-buttons">
-        <a href="#" class="btn">Hire Me</a>
-        <a href="#" class="btn-outline">My Portfolio</a>
-      </div>
-      <img src="./images/medium-shot-male-flight-attendant-posing_23-2150312703.avif" alt="John Watson">
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Blog</a>
+        <a href="#">Pages</a>
+        <a href="#">Contact</a>
+      </nav>
+      <button class="btn">Hire Me</button>
     </div>
-
   </header>
 
-  <!-- About Section -->
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hi, I am John Watson</h1>
+        <h2>Web Developer</h2>
+        <p>I love graphic design and photography and have been working on my portfolio since 2016.</p>
+        <div class="hero-buttons">
+          <button class="btn">Hire Me</button>
+          <button class="btn-outline">My Portfolio</button>
+        </div>
+      </div>
+      <img src="/images/medium-shot-male-flight-attendant-posing_23-2150312701.avif" alt="John Watson" class="hero-img">
+    </div>
+  </section>
+
+  <!-- About Me Section -->
   <section class="about">
-    <div class="about-content">
-      <img src="./images/medium-shot-male-flight-attendant-posing_23-2150312701.avif" alt="John Watson">
-      <div class="text">
-        <h2>A Lead UI Designer & Web Developer Based In UK</h2>
-        <p>I create stylish design and photography and have been working on my portfolio since 2018. I can help you build your brand and grow your business online.</p>
+    <div class="container about-content">
+      <img src="/images/medium-shot-male-flight-attendant-posing_23-2150312703.avif" alt="About Me" class="about-img">
+      <div class="about-text">
+        <h2>A Lead UI Designer & Web Developer Based in UK</h2>
+        <p>I love graphic design and photography and have been working on my portfolio since 2016.</p>
+        <ul class="about-info">
+          <li><strong>Name:</strong> John Watson</li>
+          <li><strong>Email:</strong> John Watso@mail.com</li>
+          <li><strong>Phone:</strong> +1 234 567 8901</li>
+          <li><strong>Location:</strong> London, UK</li>
+        </ul>
         <div class="about-buttons">
-          <a href="#" class="btn">Hire Me</a>
-          <a href="#" class="btn-outline">Download CV</a>
+          <button class="btn">Hire Me</button>
+          <button class="btn-outline">Download CV</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- What I Do Section -->
   <section class="services">
-    <h2>What I Do For You</h2>
-    <div class="services-cards">
-      <div class="service-card">
-        <h3>Web Development</h3>
-        <p>Build responsive and scalable websites.</p>
-      </div>
-      <div class="service-card">
-        <h3>App Development</h3>
-        <p>Create stunning mobile applications.</p>
-      </div>
-      <div class="service-card">
-        <h3>Photography</h3>
-        <p>Professional and creative photography.</p>
+    <div class="container">
+      <h2>What I Do For You</h2>
+      <p class="section-subtitle">See My Services</p>
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="" alt="Web Dev Icon">
+          <h3>Web Development</h3>
+          <p>High-quality web development services using the latest tech and frameworks.</p>
+        </div>
+        <div class="service-card">
+          <img src="app-dev-icon.png" alt="App Dev Icon">
+          <h3>App Development</h3>
+          <p>Custom mobile app development solutions designed to scale and perform.</p>
+        </div>
+        <div class="service-card">
+          <img src="" alt="Photography Icon">
+          <h3>Photography</h3>
+          <p>Professional photography services for brands, events, and individuals.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- My Featured Skills Section -->
   <section class="skills">
-    <h2>My Featured Skills</h2>
-    <div class="skills-bars">
-      <div class="skill">
-        <p>HTML & CSS</p>
-        <div class="bar"><div class="fill html"></div></div>
-      </div>
-      <div class="skill">
-        <p>JavaScript</p>
-        <div class="bar"><div class="fill js"></div></div>
-      </div>
-      <div class="skill">
-        <p>Branding Design</p>
-        <div class="bar"><div class="fill branding"></div></div>
-      </div>
-      <div class="skill">
-        <p>Responsive Web Design</p>
-        <div class="bar"><div class="fill responsive"></div></div>
+    <div class="container skills-content">
+      <img src="skills.jpg" alt="Skills" class="skills-img">
+      <div class="skills-text">
+        <h2>My Featured Skills</h2>
+        <p>I have developed strong UI/UX design, branding, and front-end development skills.</p>
+        <div class="skill-bar">
+          <div class="skill">
+            <label>UI/UX Design</label>
+            <div class="bar"><div class="fill" style="width:90%;"></div></div>
+          </div>
+          <div class="skill">
+            <label>Branding Design</label>
+            <div class="bar"><div class="fill" style="width:85%;"></div></div>
+          </div>
+          <div class="skill">
+            <label>Responsive Web Design</label>
+            <div class="bar"><div class="fill" style="width:80%;"></div></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Statistics Section -->
-  <section class="stats">
-    <div class="stat">
-      <h3>135</h3>
-      <p>Finished Projects</p>
-    </div>
-    <div class="stat">
-      <h3>225</h3>
-      <p>Working Hours</p>
-    </div>
-    <div class="stat">
-      <h3>115</h3>
-      <p>Online Support</p>
-    </div>
-    <div class="stat">
-      <h3>272</h3>
-      <p>Happy Clients</p>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
+  <!-- Portfolio / Success Work Section -->
   <section class="portfolio">
-    <h2>My Success Work</h2>
-    <div class="portfolio-gallery">
-      <img src="work1.jpg" alt="Work 1">
-      <img src="work2.jpg" alt="Work 2">
-      <img src="work3.jpg" alt="Work 3">
-      <img src="work4.jpg" alt="Work 4">
-      <img src="work5.jpg" alt="Work 5">
-      <img src="work6.jpg" alt="Work 6">
+    <div class="container">
+      <h2>My Success Work</h2>
+      <p class="section-subtitle">See My Works</p>
+      <div class="portfolio-grid">
+        <img src="/images/images (4).jpg" alt="Project 1" width="300" height="200">
+        <img src="/images/images (5).jpg" alt="Project 2" width="300" height="200">
+        <img src="/images/laptop-murjp1nk4lp1idlt.jpg" alt="Project 3" width="300" height="200">
+        <img src="/images/pexels-photo-8250994.webp" alt="Project 4" width="300" height="200">
+        <img src="/images/pexels-photo-13328200.webp" alt="Project 5" width="300" height="200">
+        <img src="/images/pexels-photo-234527.webp" alt="Project 6" width="300" height="200">
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 UI Portfolio. All Rights Reserved.</p>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <h2>UI Portfolio</h2>
+        <p>
+          <i class="fas fa-phone-alt"></i> +12 345 678 910 <br>
+          <i class="fas fa-envelope"></i> info@example.com <br>
+          <i class="fas fa-map-marker-alt"></i> 208 Avenue Street, UK - 62617
+        </p>
+      </div>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2022 UI Portfolio. All Rights Reserved</p>
+    </div>
   </footer>
+  
 
 
+  
 
 </body>
 </html>
